@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Jerarquia.Models
 {
-    internal class NodoArbolito
+    public class NodoArbolito
     {
+        public string Valor { get; set; }
+
+        public List<NodoArbolito> Hijos { get; set; }
+        public NodoArbolito(string valor)
+        {
+            Valor = valor;
+            Hijos = new List<NodoArbolito>();
+        }
     }
 }
