@@ -46,15 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClasesGrafo\Aristas.cs" />
+    <Compile Include="ClasesGrafo\Grafo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Arbol.cs" />
-    <Compile Include="Models\Grafo.cs" />
-    <Compile Include="Models\NodoArbolito.cs" />
+    <Compile Include="ClasesArbol\Arbol.cs" />
+    <Compile Include="ClasesArbol\NodoArbolito.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
