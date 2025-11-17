@@ -1,0 +1,11 @@
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.csproj.AssemblyReference.cache
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.Form1.resources
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.Properties.Resources.resources
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.csproj.GenerateResource.cache
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.csproj.CoreCompileInputs.cache
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\bin\Debug\Examen1.exe.config
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\bin\Debug\Examen1.exe
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\bin\Debug\Examen1.pdb
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.exe
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.pdb
+C:\Users\romme\OneDrive\Desktop\WARP\Examen1\Examen1\obj\Debug\Examen1.exe.config
