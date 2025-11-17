@@ -19,7 +19,8 @@ namespace Examen1
         {
             InitializeComponent();
 
-            // Asigna el evento AfterSelect para tu "extra" de colores
+
+            // Asociar el evento AfterSelect del TreeView
             treeViewJerarquia.AfterSelect += treeViewJerarquia_AfterSelect;
         }
 
@@ -56,8 +57,7 @@ namespace Examen1
             }
         }
 
-        // --- MÉTODO AYUDANTE para (re)cargar el TreeView ---
-        // Lo usaremos para refrescar el árbol visual
+        
         private void CargarTreeView()
         {
             treeViewJerarquia.Nodes.Clear(); // Limpiamos el árbol visual
@@ -74,6 +74,7 @@ namespace Examen1
 
         private void AgregarNodosHijosUI(NodoArbol nodoLogico, TreeNode nodoVisual)
         {
+            // Recorrer cada hijo del nodo lógico
             foreach (NodoArbol hijoLogico in nodoLogico.Hijos)
             {
                 TreeNode hijoVisual = new TreeNode(hijoLogico.Valor);
@@ -214,7 +215,7 @@ namespace Examen1
                 return;
             }
 
-            // 2. Llamar a la Lógica (¡Aquí ocurre la magia!)
+           
             string resultado = miMapa.CalcularRutaDijkstra(inicio, fin);
 
             // 3. Mostrar resultado en la Vista
