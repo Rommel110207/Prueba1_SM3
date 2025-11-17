@@ -139,7 +139,7 @@ namespace Examen1
             if (encontrado != null)
             {
                 MessageBox.Show($"¡{nombreABuscar} ha sido encontrado!", "Búsqueda exitosa");
-                // (Extra) Aquí podrías llamar a un método que expanda y seleccione el nodo en el TreeView
+                
             }
             else
             {
@@ -175,22 +175,22 @@ namespace Examen1
             // 1. Primero, reseteamos TODOS los nodos a sus colores por defecto
             ResetearColoresDefecto(treeViewJerarquia.Nodes);
 
-            // 2. Obtenemos el nodo que acabas de seleccionar
+            
             TreeNode nodoSeleccionado = e.Node;
             if (nodoSeleccionado == null) return;
 
-            // 3. Aplicamos tu nueva lógica de colores SOLO al seleccionado
+            
 
-            // Si es "padre" (tiene hijos) -> Color Rojo
+            
             if (nodoSeleccionado.Nodes.Count > 0)
             {
                 nodoSeleccionado.BackColor = Color.Red;
                 nodoSeleccionado.ForeColor = Color.White;
             }
-            // Si es "hijo" (es un nodo hoja, no tiene hijos) -> Color Azul
+            
             else
             {
-                // (Ojo: Azul ya era tu raíz, usemos un azul diferente como 'RoyalBlue')
+                
                 nodoSeleccionado.BackColor = Color.RoyalBlue;
                 nodoSeleccionado.ForeColor = Color.White;
             }
