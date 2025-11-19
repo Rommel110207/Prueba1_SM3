@@ -31,14 +31,10 @@ namespace Examen1
             NodoArbol ceo = new NodoArbol("Rommel Muñoz");
             miJerarquia = new Arbol(ceo);
 
-            // Insertamos datos de ejemplo
-            miJerarquia.Insertar("Rommel Muñoz", "Ana Pérez");
-            miJerarquia.Insertar("Rommel Muñoz", "Luis Gómez");
-            miJerarquia.Insertar("Ana Pérez", "Carlos Sánchez");
-            miJerarquia.Insertar("Ana Pérez", "María Rodríguez");
-            miJerarquia.Insertar("Luis Gómez", "Sofía Fernández");
+            
+            
 
-            // Actualizamos el TreeView visualmente
+            
             CargarTreeView();
             treeViewJerarquia.ExpandAll(); // Expandir todos los nodos
 
@@ -60,10 +56,9 @@ namespace Examen1
         
         private void CargarTreeView()
         {
-            treeViewJerarquia.Nodes.Clear(); // Limpiamos el árbol visual
-                                             // Creamos el nodo raíz visual
+            treeViewJerarquia.Nodes.Clear(); 
             TreeNode nodoRaizUI = new TreeNode(miJerarquia.Raiz.Valor);
-            nodoRaizUI.BackColor = Color.DarkBlue; // Color original (azul)
+            nodoRaizUI.BackColor = Color.DarkBlue; 
             nodoRaizUI.ForeColor = Color.White;
 
             treeViewJerarquia.Nodes.Add(nodoRaizUI);
@@ -103,7 +98,7 @@ namespace Examen1
                 return;
             }
 
-            // 2. Validar que hay un nombre de empleado
+            
             string nombreNuevo = tbEmpleado.Text;
             if (string.IsNullOrWhiteSpace(nombreNuevo))
             {
@@ -118,11 +113,11 @@ namespace Examen1
             {
                 
                 TreeNode nuevoNodoUI = new TreeNode(nombreNuevo);
-                nuevoNodoUI.BackColor = Color.Green; // Color por defecto (verde)
+                nuevoNodoUI.BackColor = Color.Green; 
                 nuevoNodoUI.ForeColor = Color.White;
 
                 nodoJefeUI.Nodes.Add(nuevoNodoUI);
-                nodoJefeUI.Expand(); // Expandir el jefe para ver al nuevo
+                nodoJefeUI.Expand(); 
                 tbEmpleado.Clear();
             }
             else
@@ -173,7 +168,7 @@ namespace Examen1
         }
         private void treeViewJerarquia_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            // 1. Primero, reseteamos TODOS los nodos a sus colores por defecto
+            
             ResetearColoresDefecto(treeViewJerarquia.Nodes);
 
             
@@ -218,7 +213,7 @@ namespace Examen1
            
             string resultado = miMapa.CalcularRutaDijkstra(inicio, fin);
 
-            // 3. Mostrar resultado en la Vista
+            // 3. Mostrar resultado en el label
             lblRuta.Text = resultado;
         }
     }

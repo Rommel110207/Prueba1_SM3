@@ -30,20 +30,20 @@ namespace Examen1.Models
                 return null; // No se encontró
 
             if (nodoActual.Valor == valor)
-                return nodoActual; // ¡Encontrado!
+                return nodoActual; 
 
-            // Si no es este, buscar en cada uno de sus hijos
+            
             foreach (NodoArbol hijo in nodoActual.Hijos)
             {
                 NodoArbol encontrado = BuscarRecursivo(hijo, valor);
                 if (encontrado != null)
-                    return encontrado; // Retorna el nodo encontrado
+                    return encontrado; 
             }
 
             return null; // No se encontró en esta rama
         }
 
-        // Método para insertar un nuevo empleado
+       
         public bool Insertar(string valorPadre, string valorNuevo)
         {
             // 1. Encontrar al jefe (nodo padre)
@@ -51,15 +51,15 @@ namespace Examen1.Models
 
             if (padre != null)
             {
-                // 2. Si existe, crear el nuevo empleado (nodo)
+                
                 NodoArbol nuevoNodo = new NodoArbol(valorNuevo);
 
-                // 3. Agregarlo a la lista de hijos del padre
+                
                 padre.Hijos.Add(nuevoNodo);
                 return true; // Éxito
             }
 
-            return false; // No se pudo insertar (padre no existe)
+            return false; 
         }
 
         // Método para contar todos los nodos (empleados)

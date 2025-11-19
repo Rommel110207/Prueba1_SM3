@@ -8,13 +8,13 @@ namespace Examen1.Models
 {
     public class NodoArbol
     {
-        // El dato que guarda, ej: "Gerente de Finanzas"
+        // El dato que guarda
         public string Valor { get; set; }
 
         // La lista de nodos que dependen de él
         public List<NodoArbol> Hijos { get; set; }
 
-        // Constructor: Se llama cuando creas un nuevo nodo
+        // Constructor
         public NodoArbol(string valor)
         {
             Valor = valor;
